@@ -1,0 +1,17 @@
+<h1>Dices Game</h1>
+<!-- <p>Let's play dices!</p> -->
+
+<p> First dice is: </p>
+<% die1 = rand(1..6)%>
+<img src="/images/dice/<%= die1 %>.svg">
+
+
+<p> Second dice is: </p>
+<% die2 = rand(1..6)%>
+<img src="/images/dice/<%= die2 %>.svg">
+
+<p> Therefore, </p>
+<%total = die1 + die2%>
+<%= "The total is #{total}" %>
+
+<a href="/dices">Roll again!</a>
